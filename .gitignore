@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.env.*
+
+# Data files
+data/*.csv
+data/preprocessed_*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Cache
+cache/
+*.cache
+
+# Submissions
+submissions/
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
