@@ -1,0 +1,25 @@
+# Core Data Science
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.2.0
+
+# Machine Learning
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+# LLM Integration
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.13.0
+
+# Utilities
+tqdm>=4.65.0
+joblib>=1.2.0
+
+# Jupyter (optional, for notebook development)
+jupyter>=1.0.0
+ipykernel>=6.0.0 
