@@ -6,7 +6,7 @@ This project is focused on predicting whale behavior using machine learning tech
 
 ```
 .
-├── data/                    # Data files
+├── data/                    # Data files (not tracked in Git)
 │   ├── trx_data.csv        # Transaction data
 │   ├── profile.csv         # Profile data
 │   ├── train_label.csv     # Training labels
@@ -27,9 +27,15 @@ This project is focused on predicting whale behavior using machine learning tech
 └── venv/                   # Python virtual environment
 ```
 
-## Setup Instructions
+## Initial Setup
 
-1. Create and activate a virtual environment:
+1. Clone the repository:
+```bash
+git clone https://github.com/harshvs4/Whale-Prediction-Challenge.git
+cd Whale-Prediction-Challenge
+```
+
+2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Unix/macOS
@@ -37,10 +43,25 @@ source venv/bin/activate  # On Unix/macOS
 .\venv\Scripts\activate  # On Windows
 ```
 
-2. Install required dependencies:
+3. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Set up environment variables:
+   - Create a `.env` file in the root directory
+   - Add your OpenAI API key:
+     ```
+     OPENAI_API_KEY=your_api_key_here
+     ```
+
+5. Download and place the data files:
+   - Due to file size limitations, data files are not included in the repository
+   - Place the following files in the `data/` directory:
+     - trx_data.csv
+     - profile.csv
+     - train_label.csv
+     - submission_sample.csv
 
 ## Data Files
 
@@ -110,3 +131,5 @@ python notebooks/generate_visualizations.py
 - Make sure to have sufficient disk space as the data files are large
 - The project uses both traditional machine learning and LLM-based approaches
 - Different versions of scripts (v2) indicate improved or updated implementations
+- Data files are not tracked in Git due to size limitations. Please obtain them separately and place them in the `data/` directory
+- Keep your `.env` file secure and never commit it to version control
